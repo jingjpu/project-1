@@ -157,6 +157,7 @@ Live requests are made to the FTX Exchange for BTC's most current value.
 Lastly, the User is able to select the a property by ID. Prices for cryptocurrency (BTC) is fetched and updated every 15 seconds. 
 <img width="1208" alt="06_live_btc_value_chart_for_selected_unit" src="https://user-images.githubusercontent.com/96001018/155888159-750ca69a-15d3-4e7b-924a-cb11d3e18cb3.png">
 
+ 
 ---
 ## Contributors
 
