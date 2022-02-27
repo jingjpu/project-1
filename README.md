@@ -120,6 +120,43 @@ jupyter lab
 
 Open and execute the file `crypto_realestate_v2.ipynb`
 
+
+This crypto realester tool uses an `.env` file to store FTX API key and secret keys. To use this tool, create and login to [FTX US exchange](https://ftx.us/profile) to access your trading API keys. Then create an `.env` file to your remote repository on your local environment with the following syntex below:
+```
+ftx_api_key=<your_api_key>
+ftx_secret_key=<your_secret_key>
+```
+
+---
+## Usage
+
+Project library imports:
+<img width="1107" alt="01_project_library_imports" src="https://user-images.githubusercontent.com/96001018/155888148-ddafbe00-cde9-424a-9c4e-1210ac42874f.png">
+
+
+Home Price Data obtained from company mySQLdump. Collection process included data privacy concerns, locating relevant tables, and requesting additional information from company. DataFrame Preparation (column selection, drop, and merge DataFrames).
+<img width="899" alt="02_units_df" src="https://user-images.githubusercontent.com/96001018/155888149-07f048c1-e02a-4ccf-9a05-c85a387557cb.png">
+
+
+Using hvplot to visualize real estate property listing across the United States. User can use interactive widgets to pan, zoom, and hover over marked points for more property information:<n>
+
+<img width="562" alt="03_all_units_geo_view" src="https://user-images.githubusercontent.com/96001018/155888154-7e344d5f-45ae-4a68-89e4-1dd12aae9691.png">
+
+
+Interactive display that allows for the User to filter through property status (available, reserved, sold, & unreleased) and location by city. Results of the search will populate property ID and price (on left) and a corresponding geoview map (on right).
+
+<img width="1118" alt="04_available_units_in_locality" src="https://user-images.githubusercontent.com/96001018/155888155-650fe329-77ac-4e2a-8aa1-4d17fd65800c.png">
+
+ 
+  
+Live requests are made to the FTX Exchange for BTC's most current value. 
+
+<img width="1253" alt="05_live_btc_value_for_all_units" src="https://user-images.githubusercontent.com/96001018/155888157-3637ac56-0021-4ccd-9574-5ff89226c508.png">
+
+  
+Lastly, the User is able to select the a property by ID. Prices for cryptocurrency (BTC) is fetched and updated every 15 seconds. 
+<img width="1208" alt="06_live_btc_value_chart_for_selected_unit" src="https://user-images.githubusercontent.com/96001018/155888159-750ca69a-15d3-4e7b-924a-cb11d3e18cb3.png">
+
 ---
 ## Contributors
 
@@ -128,7 +165,7 @@ Open and execute the file `crypto_realestate_v2.ipynb`
 {
   "name": "Leigh Badua",
   "email": "leighbadua@gmail.com",
-  "linkedin": "<>"
+  "linkedin": "<www.linkedin.com/in/leighbadua>"
 },
 {
   "name": "Rebecca Brown",
